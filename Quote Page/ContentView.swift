@@ -10,9 +10,9 @@ import UIKit
 import SwiftUI
 
 struct ContentView: View {
-    var quotes = ["It always seems impossible until it's done", "It does not matter how slowly you go as long as you do not stop.", "Do one thing that scares you everyday."]
-    var authors = ["Nelson Mandela", "Confucius", "Eleanor Roosevelt"]
-    @State var randomNum = 0
+    @State private var quotes = [["It always seems impossible until it's done", "Nelson Mandela"], ["It does not matter how slowly you go as long as you do not stop.", "Confucius"] , ["Do one thing that scares you everyday.", "Eleanor Roosevelt"]]
+    @State private var authors = ["Nelson Mandela", "Confucius", "Eleanor Roosevelt"]
+    @State private var randomNum = 0
     var body: some View {
         NavigationStack{
             VStack {
@@ -27,9 +27,9 @@ struct ContentView: View {
                             .padding()
                         Spacer()
                             .frame(height: 40)
-                        randomNum = Int.random(in: 1..<authors.count)
-                        
-                            Text("\"It's never too late to be what you could've been.\"")
+//                        randomNum = 3
+                        randomNum = Int.random(in: 0..<quotes.count)
+                        Text("\"" + quotes[Int.random(in: 0..<quotes.count)][0] + "\"")
                             .font(.title)
                             .multilineTextAlignment(.center)
                             .padding()
