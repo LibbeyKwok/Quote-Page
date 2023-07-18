@@ -27,7 +27,7 @@ struct ContentView: View {
                             .padding()
                         Spacer()
                             .frame(height: 40)
-                        randomNum = Int.random(in: 1 .. <(authors.count))
+                        randomNum = Int.random(in: 1..<authors.count)
                         
                             Text("\"It's never too late to be what you could've been.\"")
                             .font(.title)
