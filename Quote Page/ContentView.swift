@@ -9,10 +9,11 @@ import Foundation
 import UIKit
 import SwiftUI
 
+ var newQuote1 = quote()
+// var newQuote = newQuote1.randQA()
+var num1 = newQuote1.randNum()
+
 struct ContentView: View {
-    @State private var quotes = [["It always seems impossible until it's done", "Nelson Mandela"], ["It does not matter how slowly you go as long as you do not stop.", "Confucius"] , ["Do one thing that scares you everyday.", "Eleanor Roosevelt"]]
-    @State private var authors = ["Nelson Mandela", "Confucius", "Eleanor Roosevelt"]
-    @State private var randomNum = 0
     var body: some View {
         NavigationStack{
             VStack {
@@ -28,12 +29,12 @@ struct ContentView: View {
                         Spacer()
                             .frame(height: 40)
 //                        randomNum = 3
-                        randomNum = Int.random(in: 0..<quotes.count)
-                        Text("\"" + quotes[Int.random(in: 0..<quotes.count)][0] + "\"")
+                       
+                        Text(newQuote1.quotes[num1])
                             .font(.title)
                             .multilineTextAlignment(.center)
                             .padding()
-                        Text("- Somebody")
+                        Text("- \(newQuote1.authors[num1])")
                             .font(.title)
                         
                             .foregroundColor(Color(hex: "EAECE3"))
@@ -59,6 +60,9 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
 extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

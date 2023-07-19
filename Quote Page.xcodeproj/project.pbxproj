@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		839520862A6716D800DA1C9E /* homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839520852A6716D800DA1C9E /* homepage.swift */; };
+		83CB87E92A68626500B3A91E /* quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB87E82A68626500B3A91E /* quote.swift */; };
 		83D2A7512A66FE6400783B41 /* Quote_PageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2A7502A66FE6400783B41 /* Quote_PageApp.swift */; };
 		83D2A7532A66FE6400783B41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D2A7522A66FE6400783B41 /* ContentView.swift */; };
 		83D2A7552A66FE6700783B41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D2A7542A66FE6700783B41 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		839520852A6716D800DA1C9E /* homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepage.swift; sourceTree = "<group>"; };
+		83CB87E82A68626500B3A91E /* quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quote.swift; sourceTree = "<group>"; };
 		83D2A74D2A66FE6400783B41 /* Quote Page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quote Page.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D2A7502A66FE6400783B41 /* Quote_PageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote_PageApp.swift; sourceTree = "<group>"; };
 		83D2A7522A66FE6400783B41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 		83D2A7442A66FE6400783B41 = {
 			isa = PBXGroup;
 			children = (
+				83CB87E82A68626500B3A91E /* quote.swift */,
 				839520852A6716D800DA1C9E /* homepage.swift */,
 				83D2A74F2A66FE6400783B41 /* Quote Page */,
 				83D2A74E2A66FE6400783B41 /* Products */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CB87E92A68626500B3A91E /* quote.swift in Sources */,
 				83D2A7532A66FE6400783B41 /* ContentView.swift in Sources */,
 				83D2A7512A66FE6400783B41 /* Quote_PageApp.swift in Sources */,
 				839520862A6716D800DA1C9E /* homepage.swift in Sources */,
