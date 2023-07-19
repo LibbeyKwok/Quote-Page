@@ -41,7 +41,7 @@ struct ContentView: View {
                             .frame(height:60)
                         //CHANGE THE DESTINATION
                         NavigationLink(destination: homepage()) {
-                            Text("Start")
+                            Text("Homepage")
                             
 
                         }
