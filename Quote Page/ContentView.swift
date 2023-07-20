@@ -58,20 +58,23 @@ struct ContentView: View {
                     .controlSize(.large)
                 }
                 .padding()
-            }
+            }//zstack
 //            .toolbar {
 //                ToolbarItemGroup(placement: .status) {
             HStack{
                 NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                                         
-                    Image("habit tracker")
-                                                .resizable(resizingMode: .stretch)
-                                                .aspectRatio(contentMode: .fit)
+                    Image("habit tracker ")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 50.0, height: 50.0)
+                       
                 }
                 NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                     Image("journal")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .frame(width: 50.0, height: 50.0)
                         
                     
                 }
@@ -79,28 +82,33 @@ struct ContentView: View {
                     Image("home")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .frame(width: 50.0, height: 70.0)
 //                        .padding()
                 }
                 NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                     Image("emotion")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .frame(width: 50.0, height: 50.0)
                 }
                 NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                     Image("check list")
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
+                        .frame(width: 50.0, height: 50.0)
 //                        .padding()
+                    
                         
                         
                 }
                 
             }//hstack
-            .padding(10)
+//            .padding(10)
             
               //  }//group
             //}//toolbar
-        }
+        }            .background(Color(hex: "F6EFE8"))
+
       }
     }
   }
