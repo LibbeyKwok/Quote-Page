@@ -59,29 +59,47 @@ struct ContentView: View {
                 }
                 .padding()
             }
-            .toolbar {
-                ToolbarItemGroup(placement: .status) {
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        Image("Habit Tracker")
-                    }
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        Text("journal")
-                         
-                    }
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        Image("home")
-                    }
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        Text("Check-In")
-                    }
-                    NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                        Text("Todo-List")
-                    }
-
-
+//            .toolbar {
+//                ToolbarItemGroup(placement: .status) {
+            HStack{
+                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                                        
+                    Image("habit tracker")
+                                                .resizable(resizingMode: .stretch)
+                                                .aspectRatio(contentMode: .fit)
+                }
+                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    Image("journal")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        
                     
                 }
-            }
+                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    Image("home")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+//                        .padding()
+                }
+                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    Image("emotion")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                }
+                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    Image("check list")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+//                        .padding()
+                        
+                        
+                }
+                
+            }//hstack
+            .padding(10)
+            
+              //  }//group
+            //}//toolbar
         }
       }
     }
